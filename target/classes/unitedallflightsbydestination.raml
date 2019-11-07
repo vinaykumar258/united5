@@ -1,0 +1,15 @@
+#%RAML 1.0
+version: 1.0.0
+title: unitedAllFlightsBydestination
+baseUri: http://localhost:8081/api
+/unitedAllFlightsBydestination:
+  get:
+    queryParameters:
+      destination:
+        minLength: 3
+        maxLength: 3
+    responses:
+      200:
+        body:
+          application/json:
+            
